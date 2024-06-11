@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Pilihan HP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .phone {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .phone img {
+            width: 150px;
+            height: auto;
+        }
+        .phone h3 {
+            margin: 10px 0;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu Pilihan HP</h1>
+        <select id="phoneSelect" onchange="displayPhone()">
+            <option value="">Pilih HP</option>
+            <option value="hpA">Merek Oppo</option>
+            <option value="hpB">Merek Samsung</option>
+            <option value="hpC">Merek Xiaomi</option>
+        </select>
+
+        <!-- Oppo Phones -->
+        <div class="phone hpA hidden">
+            <h3>Merek Oppo - Seri 1</h3>
+            <img src="oppo 1.jpeg" alt="HP Oppo 1">
+            <p>Harga: Rp 3.000.000</p>
+            <button>Beli</button>
+        </div>
+        <div class="phone hpA hidden">
+            <h3>Merek Oppo - Seri 2</h3>
+            <img src="oppo 2.jpeg" alt="HP Oppo 2">
+            <p>Harga: Rp 2.000.000</p>
+            <button>Beli</button>
+        </div>
+        <div class="phone hpA hidden">
+            <h3>Merek Oppo - Seri 3</h3>
+            <img src="oppo 3.jpeg" alt="HP Oppo 3">
+            <p>Harga: Rp 2.300.000</p>
+            <button>Beli</button>
+        </div>
+
+        <!-- Samsung Phones -->
+        <div class="phone hpB hidden">
+            <h3>Merek Samsung - Seri 1</h3>
+            <img src="samsung 1.jpeg" alt="HP Samsung 1">
+            <p>Harga: Rp 4.000.000</p>
+            <button>Beli</button>
+        </div>
+        <div class="phone hpB hidden">
+            <h3>Merek Samsung - Seri 2</h3>
+            <img src="samsung 2.jpeg" alt="HP Samsung 2">
+            <p>Harga: Rp 5.500.000</p>
+            <button>Beli</button>
+        </div>
+        <div class="phone hpB hidden">
+            <h3>Merek Samsung - Seri 3</h3>
+            <img src="samsung 3.jpeg" alt="HP Samsung 3">
+            <p>Harga: Rp 6.200.000</p>
+            <button>Beli</button>
+        </div>
+
+        <!-- Xiaomi Phones -->
+        <div class="phone hpC hidden">
+            <h3>Merek Xiaomi - Seri 1</h3>
+            <img src="xiaomi 1.jpeg" alt="HP Xiaomi 1">
+            <p>Harga: Rp 3.500.000</p>
+            <button>Beli</button>
+        </div>
+        <div class="phone hpC hidden">
+            <h3>Merek Xiaomi - Seri 2</h3>
+            <img src="xiaomi 2.jpeg" alt="HP Xiaomi 2">
+            <p>Harga: Rp 4.200.000</p>
+            <button>Beli</button>
+        </div>
+        <div class="phone hpC hidden">
+            <h3>Merek Xiaomi - Seri 3</h3>
+            <img src="xiaomi 3.jpeg" alt="HP Xiaomi 3">
+            <p>Harga: Rp 4.800.000</p>
+            <button>Beli</button>
+        </div>
+    </div>
+
+    <script>
+        function displayPhone() {
+            var phoneSelect = document.getElementById("phoneSelect").value;
+            var phones = document.querySelectorAll('.phone');
+
+            phones.forEach(function(phone) {
+                phone.classList.add('hidden');
+            });
+
+            switch (phoneSelect) {
+                case "hpA":
+                    var hpA = document.querySelectorAll('.hpA');
+                    hpA.forEach(function(phone) {
+                        phone.classList.remove('hidden');
+                    });
+                    break;
+                case "hpB":
+                    var hpB = document.querySelectorAll('.hpB');
+                    hpB.forEach(function(phone) {
+                        phone.classList.remove('hidden');
+                    });
+                    break;
+                case "hpC":
+                    var hpC = document.querySelectorAll('.hpC');
+                    hpC.forEach(function(phone) {
+                        phone.classList.remove('hidden');
+                    });
+                    break;
+                default:
+                    // No action needed
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>
