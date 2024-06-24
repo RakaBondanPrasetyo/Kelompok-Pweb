@@ -14,8 +14,9 @@ header {
 }
 
 header h1 {
+    color: #FFA500;
     margin: 0;
-    font-family: 'Georgia', serif;
+    font-family: 'Arial', serif;
 }
 
 nav ul {
@@ -46,8 +47,14 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+h1 {
+    color: #FFA500;
+    font-weight: bold;
+}
+
 h2 {
     color: #FFA500;
+    
 }
 
 footer {
