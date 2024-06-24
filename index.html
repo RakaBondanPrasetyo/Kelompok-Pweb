@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul</title>
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- App -->
+    <script src="src/app.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="main-navbar">
+        <a href="#" class="navbar-logo">Kenagan<span>Handphone</span></a>
+        <div class="navbar-nav">
+            <a href="#">Home</a>
+            <a href="#device-selection">Shop</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="navbar-extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
+        </div>
+
+        <!-- Search -->
+        <div class="search-form">
+            <input type="search-button" id="search-box" placeholder="Search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- End -->
+
+        <!-- Shop Cart -->
+        <div class="shopping-cart">
+            <div class="cart-items">
+                <img src="img/iphone11.jpg" alt="Iphone 11 Series">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">5.320.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-items">
+                <img src="img/iphone11.jpg" alt="Iphone 11 Series">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">5.320.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-items">
+                <img src="img/iphone11.jpg" alt="Iphone 11 Series">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">5.320.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+        </div>
+        <!-- Ende -->
+    </nav>
+
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Selamat Datang di <span>ppp</span></h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi cupiditate nobis incidunt sed? Nam, iure.</p>
+            <a href="shop.html" class="cta">Beli sekarang</a>
+        </main>
+    </section>
+
+    <section class="device-selection" id="device-selection">
+        <h1>Terlaris Tahun Ini</h1>
+        <div class="device-grid">
+            <div class="device-item">
+                <a href="pembelian.php">
+                    <img src="img/iphone11.jpg" alt="iPhone 11 Series">
+                    <h2>iPhone 11 Series</h2>
+                    <p>Starting From Rp 5.320.000</p>
+                </a>
+            </div>
+            <div class="device-item">
+                <a href="pembelian.php">
+                    <img src="img/iphone12.jpg" alt="iPhone 12 Series">
+                    <h2>iPhone 12 Series</h2>
+                    <p>Starting From Rp 3.460.000</p>
+                </a>
+            </div>
+            <div class="device-item">
+                <a href="pembelian.php">
+                    <img src="img/iphone13.jpg" alt="iPhone 13 Series">
+                    <h2>iPhone 13 Series</h2>
+                    <p>Starting From Rp 6.920.000</p>
+                </a>
+            </div>
+            <div class="device-item">
+                <a href="pembelian.php">
+                    <img src="img/iphone14.jpg" alt="iPhone 14 Series">
+                    <h2>iPhone 14 Series</h2>
+                    <p>Starting From Rp 9.580.000</p>
+                </a>
+            </div>
+            <div class="device-item">
+                <a href="pembelian.php">
+                    <img src="img/iphone15.jpg" alt="iPhone 15 Series">
+                    <h2>iPhone 15 Series</h2>
+                    <p>Starting From Rp 4.100.000</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="devices-selections">
+            <h1>Promo Gila</h1>
+        <div class="devices-grids">
+            <div class="devices-items">
+                <a href="pembelian.php">
+                    <img src="img/galaxys24.jpg" alt="Galaxy S24 Ultra">
+                    <div class="discount-badge">-17%</div>
+                    <h2>Galaxy S24 Ultra - 256 GB - Titanium Grey</h2>
+                    <p class="price">Rp 17.430.000 <span>Rp 20.999.999</span></p>
+                </a>
+            </div>
+            <div class="devices-items">
+                <a href="pembelian.php">
+                    <img src="img/galaxys23.jpg" alt="Galaxy S23 Ultra">
+                    <div class="discount-badge">-11%</div>
+                    <h2>Galaxy S23 Ultra - 256 GB - Cream</h2>
+                    <p class="price">Rp 16.910.000 <span>Rp 18.999.999</span></p>
+                </a>
+            </div>
+            <div class="devices-items">
+                <a href="pembelian.php">
+                    <img src="img/pocof4.jpg" alt="Poco f4 Pro">
+                    <div class="discount-badge">-41%</div>
+                    <h2>Poco f4 Pro - 256 GB - Metal Bronze</h2>
+                    <p class="price">Rp 2.600.000 <span>Rp 4.410.000</span></p>
+                </a>
+            </div>
+            <div class="devices-items">
+                <a href="pembelian.php">
+                    <img src="img/galaxyflip3.jpg" alt="Galaxy Flip3">
+                    <div class="discount-badge">-55%</div>
+                    <h2>Galaxy Flip3 - 256 GB - Midnight Jazz</h2>
+                    <p class="price">Rp 2.250.000 <span>Rp 4.999.000</span></p>
+                </a>
+            </div>
+            <div class="devices-items">
+                <a href="pembelian.php">
+                    <img src="img/asusrog7.jpg" alt="Asus ROG 7">
+                    <div class="discount-badge">-42%</div>
+                    <h2>Asus ROG 7 - 128 GB - Diamond Flare</h2>
+                    <p class="price">Rp 2.900.000 <span>Rp 4.999.000</span></p>
+                </a>
+            </div>
+            <div class="devices-items">
+                <a href="pembelian.php">
+                    <img src="img/opporeno10.jpg" alt="Oppo Reno 10">
+                    <div class="discount-badge">-31%</div>
+                    <h2>Oppo Reno 10 - 256 GB - Awesome Graphite</h2>
+                    <p class="price">Rp 4.390.000 <span>Rp 6.399.000</span></p>
+                </a>
+            </div>
+    </section>
+
+    <footer>
+        <div class="social">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="twitter"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+        </div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="credit">
+            <p>Created by <a href=""> <span>Fadhilla Firman, Raka Bondan, Gilang Satya</span></a>. | &copy; 2024.</p> 
+        </div>
+    </footer>
+    <!-- Modal box -->
+    <!-- <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#"><i data-feather="X"></i></a>
+            <div class="modal-content">
+                <img src="img/iphone11.jpg" alt=Iphone 11 Series>
+                <div class="product-content">
+                    <h3>Product 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolor?</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End -->
+
+    <script>
+        feather.replace();
+    </script>
+
+    <script src="js/script.js">
+        
+    </script>
+</body>
+</html>
