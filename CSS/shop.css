@@ -25,7 +25,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff  ;
     color: var(--primary-color);
-    min-height: 368vh;
+    min-height: 230vh;
     /* background-color: blue; */
 }
 
@@ -180,28 +180,69 @@ body {
 }
 /* End */
 
-main {
-    padding: 20px;
-}
-
-.about-us, .contact {
-    background-color: #3E2723;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-h2 {
-    color: #FFA500;
-}
-
-footer {
-    background-color: #1B1B1B;
-    color: #FFA500;
+/* start section */
+.devices-selections {
     text-align: center;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
+    max-height: 100vh;
     width: 100%;
+    padding: 11%;
+    box-sizing: border-box;
+    clear: both;
+    /* background-color: #684e35; */
 }
+
+.devices-selections h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#brand-select {
+    margin-bottom: 2rem;
+}
+
+.devices-grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.9rem;
+    justify-content: center;
+}
+
+.devices-items {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.8rem;
+    box-shadow: 0 5px 3px 3px rgba(0,0,0,0.1);
+    padding: 2.5rem;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.devices-items:hover {
+    transform: translateY(-0.6rem);
+}
+
+.devices-items img {
+    max-height: 100%;
+    height: auto;
+    border-radius: 0.6rem;
+    margin-bottom: 0.9rem;
+}
+
+.devices-items h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.device-item .prices {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-left: 0.6rem;
+}
+
+
+/* end section */

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/shop.css">
+
+    <!-- AlpineJS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- App -->
+    <script src="src/app.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="main-navbar">
+        <a href="#" class="navbar-logo">Kenagan<span>Handphone</span></a>
+        <div class="navbar-nav">
+            <a href="index.html">Home</a>
+            <a href="#device-selection">Shop</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="navbar-extra">
+            <a href="#" id="search-button"><i data-feather="search"></i></a>
+            <a href="#" id="shopping-cart-button"><i data-feather="shopping-cart"></i></a>
+            <a href="#" id="menu"><i data-feather="menu"></i></a>
+        </div>
+
+        <!-- Search -->
+        <div class="search-form">
+            <input type="search-button" id="search-box" placeholder="Search here...">
+            <label for="search-box"><i data-feather="search"></i></label>
+        </div>
+        <!-- End -->
+
+        <!-- Shop Cart -->
+        <div class="shopping-cart">
+            <div class="cart-items">
+                <img src="img/iphone11.jpg" alt="Iphone 11 Series">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">5.320.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-items">
+                <img src="img/iphone11.jpg" alt="Iphone 11 Series">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">5.320.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+            <div class="cart-items">
+                <img src="img/iphone11.jpg" alt="Iphone 11 Series">
+                <div class="item-detail">
+                    <h3>Product 1</h3>
+                    <div class="item-price">5.320.000</div>
+                </div>
+                <i data-feather="trash-2" class="remove-item"></i>
+            </div>
+        </div>
+        <!-- End -->
+    </nav>
+
+    <!-- start section -->
+    <section class="devices-selections">
+        <h1>Daftar Handphone</h1>
+        <select id="brand-select" onchange="filterProducts()">
+            <option value="all">Semua Produk</option>
+            <option value="samsung">Samsung</option>
+            <option value="apple">Apple</option>
+            <option value="poco">Poco</option>
+            <option value="oppo">Oppo</option>
+            <option value="asus">Asus</option>
+        </select>
+    <div class="devices-grids" id="devices-grids">
+        <div class="devices-items" data-brand="samsung">
+            <a href="pembelian.php">
+                <img src="img/galaxys24.jpg" alt="Galaxy S24 Ultra">
+                <h2>Galaxy S24 Ultra - 256 GB - Titanium Grey</h2>
+                <p class="price">Rp 17.430.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="samsung"> 
+            <a href="pembelian.php">
+                <img src="img/galaxys23.jpg" alt="Galaxy S23 Ultra">
+                <h2>Galaxy S23 Ultra - 256 GB - Cream</h2>
+                <p class="price">Rp 16.910.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="poco">
+            <a href="pembelian.php">
+                <img src="img/pocof4.jpg" alt="Poco f4 Pro">
+                <h2>Poco f4 Pro - 256 GB - Metal Bronze</h2>
+                <p class="price">Rp 2.600.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="samsung">
+            <a href="pembelian.php">
+                <img src="img/galaxyflip3.jpg" alt="Galaxy Flip3">
+                <h2>Galaxy Flip3 - 256 GB - Midnight Jazz</h2>
+                <p class="price">Rp 2.250.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="asus">
+            <a href="pembelian.php">
+                <img src="img/asusrog7.jpg" alt="Asus ROG 7">
+                <h2>Asus ROG 7 - 128 GB - Diamond Flare</h2>
+                <p class="price">Rp 2.900.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="oppo">
+            <a href="pembelian.php">
+                <img src="img/opporeno10.jpg" alt="Oppo Reno 10">
+                <h2>Oppo Reno 10 - 256 GB - Awesome Graphite</h2>
+                <p class="price">Rp 4.390.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="apple">
+            <a href="pembelian.php">
+                <img src="img/iphone12.jpg" alt="Iphone 12 Series">
+                <h2>Iphone 12 Series - 128 GB - Blue</h2>
+                <p class="price">Rp 2.900.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="apple">
+            <a href="pembelian.php">
+                <img src="img/iphone11.jpg" alt="Iphone 11 Series">
+                <h2>Iphone 11 Series - 128 GB - White</h2>
+                <p class="price">Rp 4.390.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="apple">
+            <a href="pembelian.php">
+                <img src="img/iphone13.jpg" alt="Iphone 13 Series">
+                <h2>Iphone 13 Series - 256 GB - Pink</h2>
+                <p class="price">Rp 4.390.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="apple">
+            <a href="pembelian.php">
+                <img src="img/iphone14.jpg" alt="Iphone 14 Series">
+                <h2>Iphone 14 Series - 256 GB - Blue</h2>
+                <p class="price">Rp 4.390.000 </p>
+            </a>
+        </div>
+        <div class="devices-items" data-brand="apple">
+            <a href="pembelian.php">
+                <img src="img/iphone15.jpg" alt="Iphone 15 Series">
+                <h2>Iphone 15 Series - 256 GB - Green</h2>
+                <p class="price">Rp 4.390.000 </p>
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- end -->
+
+    <script>
+        feather.replace();
+    </script>
+
+    <script src="js/script.js">
+        
+    </script>
+</body>
+</html>

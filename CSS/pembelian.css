@@ -1,44 +1,70 @@
-*,
-html {
-    padding: 0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
+}
+
+.PaymentOptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #ffffff;
-}
-
-.nav-item .nav-link {
+h2 {
     text-align: center;
-    align-items: center;
+    margin-bottom: 20px;
 }
 
-.nav-login .login-btn {
-    background: #ffb724;
-    margin-left: 300px;
-    margin-right: 10px;
-    padding: 6px 30px;
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mb-3, .mb-4 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea, button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
     border: none;
-    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
-.nav-login .login-btn:hover {
-    background: #fb8c00;
-}
-.nav-login .daftar-btn {
-    background: #ffbb32;
-    padding: 6px 30px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 6px;
-    transition: background-color 0.3s ease;
-}
-
-.nav-login .daftar-btn:hover {
-    background: #fb8c00;
+button:hover {
+    background-color: #0056b3;
 }

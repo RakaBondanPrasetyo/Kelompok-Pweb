@@ -39,3 +39,22 @@ document.addEventListener('click', function(e) {
         shopCart.classList.remove('active');
     }
 });
+
+// filter
+function filterProducts() {
+    const selectedBrand = document.getElementById('brand-select').value;
+    const products = document.querySelectorAll('.devices-items');
+
+    products.forEach(product => {
+        if (selectedBrand === 'all') {
+            product.style.display = 'block';
+        } else {
+            if (product.getAttribute('data-brand') === selectedBrand) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        }
+    });
+}
+// end
