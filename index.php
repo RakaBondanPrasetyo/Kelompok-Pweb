@@ -18,6 +18,15 @@ $currentUser = $user->getUser();
     <meta charset="utf-8">  
     <title>Home</title>  
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">  
+    <style>
+        body {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: "Roboto", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>  
 <body>  
 <div class="container">  

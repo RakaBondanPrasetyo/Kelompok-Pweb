@@ -3,55 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kenangan Handphone | Hubungi Kami</title>
+    <title>Hubungi Kami - Kenangan Handphone  </title>
     <link rel="stylesheet" href="contac.css">
 </head>
 <body>
-<section class="contact">
-    <h1>Kenangan Handphone </h1>
-    <h2>Hubungi Kami</h2>
-    <p>Kami selalu senang mendengar dari Anda. Silakan hubungi kami melalui formulir di bawah ini atau melalui telepon atau email.</p>
+    
+        <nav>
+            <ul>
+                <h1>Kenangan Handphone</h1>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    <section class="contact">
+        <h2>Hubungi Kami</h2>
+        <p>Kami selalu senang mendengar dari Anda. Silakan hubungi kami melalui formulir di bawah ini atau melalui telepon atau email.</p>
 
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-        <div class="form-group">
-            <label for="name">Nama  :</label>
-            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
-        </div>
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+            </div>
 
-        <div class="form-group">
-            <label for="email">Email  :</label>
-            <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required>
-        </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda" required>
+            </div>
 
-        <div class="form-group">
-            <label for="subject">Subjek:</label>
-            <input type="text" id="subject" name="subject" placeholder="Masukkan subjek Anda" required>
-        </div>
+            <div class="form-group">
+                <label for="subject">Subjek:</label>
+                <input type="text" id="subject" name="subject" placeholder="Masukkan subjek Anda" required>
+            </div>
 
-        <div class="form-group">
-            <label for="message">Pesan :</label>
-            <textarea id="message" name="message" placeholder="Masukkan pesan Anda" required></textarea>
-        </div>
+            <div class="form-group">
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" placeholder="Masukkan pesan Anda" required></textarea>
+            </div>
 
-        <div class="form-group">
-            <label for="photo">Foto     :</label>
-            <input type="file" id="photo" name="photo">
-            <p>Opsional: Lampirkan foto yang terkait dengan pertanyaan Anda.</p>
-        </div>
+            <div class="form-group">
+                <label for="photo">Foto:</label>
+                <input type="file" id="photo" name="photo">
+                <p>Opsional: Lampirkan foto yang terkait dengan pertanyaan Anda.</p>
+            </div>
 
-        <div class="form-group">
-            <p><strong>Lokasi Kami:</strong></p>
-            <p> https://maps.app.goo.gl/U22n99SygEqgARsN6</p>
-            <iframe src="lokasi.jpg"></iframe>
-        </div>
+            <div class="form-group">
+                <p><strong>Lokasi Kami:</strong></p>
+                <p><a href="https://maps.app.goo.gl/U22n99SygEqgARsN6" target="_blank">https://maps.app.goo.gl/U22n99SygEqgARsN6</a></p>
+                <iframe src="lokasi.jpg"></iframe>
+            </div>
 
-        <button type="submit" name="submit">Kirim Pesan</button>
-    </form>
+            <button type="submit" name="submit">Kirim Pesan</button>
+        </form>
 
+        <p><strong>Telepon:</strong> 08809354733</p>
+        <p><strong>Email:</strong> kenangangandphone@webmail.com</p>
+    </section>
 
-    <p><strong>Telepon:</strong> 08809354733</p>
-    <p><strong>Email:</strong> kenanganhandphone@webmail.com</p>
-</section>
+    <section class="additional-info">
+        <h2>Informasi Tambahan</h2>
+        <p>“Flash sale handphone Android mulai Rp1 jutaan! Dapatkan produknya sekarang juga. Penawaran terbatas, hanya 2 jam! Jangan sampai kehabisan!”.</p>
+    </section>
 
+    <footer>
+        <p>&copy; 2024 Kenangan Handphone. All rights reserved.</p>
+    </footer>
 </body>
 </html>

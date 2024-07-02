@@ -1,22 +1,25 @@
-body {
+body { 
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 5;
     background-color: #2C1B18;
     color: #FFFFFF;
 }
 
-header {
+nav {
     background-color: #1B1B1B;
     color: #FFA500;
     padding: 10px 0;
     text-align: center;
 }
+nav h1{
+    margin: 10;
+    font-family: 'Georgia', serif;
+}
 
 header h1 {
-    color: #FFA500;
-    margin: 0;
-    font-family: 'Arial', serif;
+    margin: 10;
+    font-family: 'Georgia', serif;
 }
 
 nav ul {
@@ -39,7 +42,7 @@ main {
     padding: 20px;
 }
 
-.about-us, .contact {
+.contact {
     background-color: #3E2723;
     margin: 10px 0;
     padding: 10px;
@@ -63,6 +66,6 @@ footer {
     text-align: center;
     padding: 10px 0;
     position: absolute;
-    bottom: 0;
+    bottom: 100;
     width: 100%;
 }
